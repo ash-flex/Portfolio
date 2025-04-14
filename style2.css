@@ -1,0 +1,59 @@
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content img {
+  width: 250px;
+  border-radius: 10px;
+  border: 4px solid cyan;
+  margin-bottom: 10px;
+}
+
+.my-name {
+  font-size: 1.8rem;
+  color: cyan;
+  margin-top: 10px;
+}
+
+#contact {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+  
+  .home-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home-info {
+    text-align: center;
+  }
+  
+  .home-left img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 4px solid cyan;
+  }
+  
+  .home-left h1, .home-left h2, .home-left p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .home-right {
+    width: 100%;
+    position: relative;
+  }

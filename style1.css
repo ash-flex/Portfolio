@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 3rem;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  
+  .nav-buttons a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: cyan;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .smiley-face {
+    font-size: 100px;
+    color: rgb(180, 247, 241);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    animation: blink 1s infinite alternate;
+    z-index: 2;
+  }
+  
+  .smiley-face.left {
+    left: 20px;
+  }
+  
+  .smiley-face.right {
+    right: 20px;
+  }
+  
+  
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="style3.css" />
+  <link rel="stylesheet" href="global.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav-buttons">
+      <a href="#home">HOME</a>
+      <a href="#profile">PROFILE</a>
+      <a href="#aboutme">ABOUT ME</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#background">BACKGROUND</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1 class="main-title blinking">Welcome to my Portfolio!</h1>
+
+    <p class="quote">Keep it cool, Don't lose your rule,<br>Play it wise, That's the Golden Rule</p>
+
+    <div class="home-content">
+      <span class="smiley-face left">:)</span>
+    
+      <div class="center-content">
+        <img src="487971293_603455709381803_6504713033476111735_n.jpg" alt="Marc Asher M. Binarao" />
+        <h2 class="my-name">Marc Asher M. Binarao</h2>
+        <p id="contact">
+          <strong>Contact Me:</strong><br>
+          <span>&#128222; +639510844588</span><br>
+          <span>&#9993; binaraoasher9@gmail.com</span><br>
+          <span>
+            <span class="fb-name">
+              <span class="fb-circle">f</span> Marc Asher Binarao
+            </span>            
+            </a>
+          </span>
+        </p>
+      </div>
+    
+      <span class="smiley-face right">:)</span>
+    </div>
+    
+      <div class="home-right">
+        <span class="smiley-face left">:)</span>
+        <span class="smiley-face right">:)</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile" class="hidden">
+    <h2>Profile</h2>
+    <p>Date of birth: 09-13-2005</p>
+    <p>Citizenship: Filipino</p>
+    <p>Sex: Male</p>
+    <p>Age: 19</p>
+  </section>
+
+  <section id="aboutme" class="hidden">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Marc Asher M. Binarao, a passionate and driven IT student focused on game development and web design. I strive to give my best in every task, always aiming to improve and grow my skills. My goal is to become a successful IT professional who can create meaningful projects. I believe that with hard work, dedication, and the right mindset, I can turn my dreams into reality.
+    </p>
+  </section>
+
+  <section id="skills" class="hidden">
+    <h2>Skills</h2>
+    <ul>
+      <li>Able to Listen</li>
+      <li>Accept Feedback</li>
+      <li>Collaborating</li>
+      <li>Cooperative</li>
+      <li>Decision Making</li>
+      <li>Desires to Learn</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="hidden">
+    <h2>Projects</h2>
+    <p>SOON TO BE ANNOUNCED....</p>
+  </section>
+
+  <section id="background" class="hidden">
+    <h2>Background</h2>
+    <p>Currently Studying in Pamantasan ng Lungsod ng San Pablo</p>
+    <p>Crecencia Drucila Lopez Senior High School</p>
+    <p>Prudencia D. Fule Memorial National High School</p>
+    <p>Prudencia D. Fule Memorial Elementary School</p>
+  </section>
+
+  <script>
+    const buttons = document.querySelectorAll('.nav-buttons a');
+    const sections = document.querySelectorAll('section');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href').substring(1);
+
+        sections.forEach(section => {
+          if (section.id === targetId) {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

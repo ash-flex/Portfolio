@@ -1,0 +1,11 @@
+#skills ul {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  
+  #projects, #background {
+    padding: 2rem;
+  }
